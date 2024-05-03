@@ -21,7 +21,7 @@ for filepath in glob.glob(os.path.join(filedir, 'NiS2_upto*')):
     idx = np.argsort(T)
     T = T[idx]
     C = C[idx]
-    ax.plot(T, C, '-', linewidth = 3, color = colors[int(B)], label = f'{B} T')
+    ax.plot(np.log(T), np.log(C), '.', linewidth = 3, color = colors[int(B)], label = f'{B} T')
 
 ax.set_xlabel(r'$T$ [K]')
 ax.set_ylabel(r'$C$ [$\mu$J/K]')
@@ -42,7 +42,7 @@ for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
     idx = np.argsort(T)
     T = T[idx]
     C = C[idx]
-    ax.plot(T, B*np.ones(T.shape), C, '-', linewidth = 3, color = colors[int(B)], label = f'{B} T')
+    ax.plot(np.log(T), B*np.ones(T.shape), np.log(C), '.', linewidth = 3, color = colors[int(B)], label = f'{B} T')
 
 ax.set_xlabel(r'$T$ [K]')
 ax.set_ylabel(r'$B$ [T]')
