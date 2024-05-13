@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from utils.background import fit_subbg_pp, lowTpieces_poly
+from utils.magnetic_peak import fit_magnetic
 
 filedir = './extracted_data/'
 resudir = './results/'
@@ -166,3 +167,17 @@ plt.legend(fontsize = 20)
 fig.tight_layout()
 plt.savefig(os.path.join(resudir, 'TvsdC_050K_log_log.png'))
 plt.close()
+
+for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
+    data = pd.read_pickle(filepath)
+    B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
+    if B != 8.0:
+        continue
+    T = data[fields[1]].to_numpy()
+    C = data[fields[2]].to_numpy()
+    idx = np.argsort(T)
+    T = T[idx]
+    C = C[idx]
+    C_sub = C - lowTpieces_poly(T, *xpspss)
+    xpspsss = fit_magnetic(T, C_sub, B, resudir)
+    print(xpspsss)
