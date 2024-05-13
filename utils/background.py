@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-from scipy.optimize import curve_fit, leastsq
+from scipy.optimize import leastsq
 
 def poly(x, *ps):
     out = 0
