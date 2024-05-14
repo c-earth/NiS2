@@ -171,7 +171,7 @@ plt.close()
 for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
     data = pd.read_pickle(filepath)
     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
-    if B != 8.0:
+    if B != 0.0:
         continue
     T = data[fields[1]].to_numpy()
     C = data[fields[2]].to_numpy()
@@ -179,5 +179,4 @@ for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
     T = T[idx]
     C = C[idx]
     C_sub = C - lowTpieces_poly(T, *xpspss)
-    xpspsss = fit_magnetic(T, C_sub, B, resudir)
-    print(xpspsss)
+    fit_magnetic(T, C_sub, B, resudir)
