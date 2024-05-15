@@ -50,13 +50,13 @@ def fit_magnetic(T, C, B, resu_dir):
     mmodel = Model(two_magnetic)
 
     params = mmodel.make_params(dx_p1       = dict(value=5,     vary=1, min=    0, max=  20), 
-                                ferro1      = dict(value=0,     vary=1, min=    0, max= 0.1), 
+                                ferro1      = dict(value=0,     vary=0, min=    0, max= 0.1), 
                                 antiferro1  = dict(value=0,     vary=1, min=    0, max= 0.1), 
                                 x_c1        = dict(value=29,    vary=1, min=   27, max=  30), 
                                 ra1         = dict(value=0,     vary=1, min=-1000, max=   0), 
                                 rb1         = dict(value=0,     vary=1, min=-1000, max=1000),
                                 dx_p2       = dict(value=15,    vary=1, min=    0, max=  10),  
-                                ferro2      = dict(value=0,     vary=1, min=    0, max= 0.1), 
+                                ferro2      = dict(value=0,     vary=0, min=    0, max= 0.1), 
                                 antiferro2  = dict(value=0,     vary=1, min=    0, max= 0.1), 
                                 x_c2        = dict(value=38,    vary=1, min=   35, max=  40), 
                                 ra2         = dict(value=0,     vary=1, min=-1000, max=   0), 
