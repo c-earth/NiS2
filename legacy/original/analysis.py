@@ -185,8 +185,8 @@ xpspss = fit_subbg_pp(T, C, B, pp_power, ignore_T, resudir)
 #     idm = np.argmax(C_sub)
 #     T_sub = np.delete(T_sub, idm, axis = 0)
 #     C_sub = np.delete(C_sub, idm, axis = 0)
-#     axs[0].plot(np.log(29.3 - T_sub[T_sub<29.3]), C_sub[T_sub<29.3], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
-#     axs[1].plot(np.log(T_sub[T_sub>29.3] - 29.3), C_sub[T_sub>29.3], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[0].plot(np.log(xc2[B] - T_sub[T_sub<xc2[B]]), C_sub[T_sub<xc2[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc2[B]] - xc2[B]), C_sub[T_sub>xc2[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
     
 
 # axs[0].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
@@ -216,8 +216,8 @@ xpspss = fit_subbg_pp(T, C, B, pp_power, ignore_T, resudir)
 #     idm = np.argmax(C_sub)
 #     T_sub = np.delete(T_sub, idm, axis = 0)
 #     C_sub = np.delete(C_sub, idm, axis = 0)
-#     axs[0].plot(np.log(29.3 - T_sub[T_sub<29.3]), np.log(C_sub[T_sub<29.3]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
-#     axs[1].plot(np.log(T_sub[T_sub>29.3] - 29.3), np.log(C_sub[T_sub>29.3]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[0].plot(np.log(xc2[B] - T_sub[T_sub<xc2[B]]), np.log(C_sub[T_sub<xc2[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc2[B]] - xc2[B]), np.log(C_sub[T_sub>xc2[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
     
 
 # axs[0].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
@@ -245,8 +245,8 @@ xpspss = fit_subbg_pp(T, C, B, pp_power, ignore_T, resudir)
 #     C_sub = C - lowTpieces_poly(T, *xpspss)
 #     T_sub = T[C_sub > 0]
 #     C_sub = C_sub[C_sub > 0]
-#     axs[0].plot(np.log(37.8 - T_sub[T_sub<37.8]), C_sub[T_sub<37.8], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
-#     axs[1].plot(np.log(T_sub[T_sub>37.8] - 37.8), C_sub[T_sub>37.8], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[0].plot(np.log(xc1[B] - T_sub[T_sub<xc1[B]]), C_sub[T_sub<xc1[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc1[B]] - xc1[B]), C_sub[T_sub>xc1[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
     
 
 # axs[0].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
@@ -274,8 +274,8 @@ xpspss = fit_subbg_pp(T, C, B, pp_power, ignore_T, resudir)
 #     C_sub = C - lowTpieces_poly(T, *xpspss)
 #     T_sub = T[C_sub > 0]
 #     C_sub = C_sub[C_sub > 0]
-#     axs[0].plot(np.log(37.8 - T_sub[T_sub<37.8]), np.log(C_sub[T_sub<37.8]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
-#     axs[1].plot(np.log(T_sub[T_sub>37.8] - 37.8), np.log(C_sub[T_sub>37.8]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[0].plot(np.log(xc1[B] - T_sub[T_sub<xc1[B]]), np.log(C_sub[T_sub<xc1[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc1[B]] - xc1[B]), np.log(C_sub[T_sub>xc1[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
     
 
 # axs[0].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
@@ -306,7 +306,7 @@ xpspss = fit_subbg_pp(T, C, B, pp_power, ignore_T, resudir)
 for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
     data = pd.read_pickle(filepath)
     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
-    if B != 7.0:
+    if B != 0.0:
         continue
     T = data[fields[1]].to_numpy()
     C = data[fields[2]].to_numpy()
@@ -315,3 +315,127 @@ for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
     C = C[idx]
     C_sub = C - lowTpieces_poly(T, *xpspss)
     fit_genfnc(T, C_sub, B, resudir)
+
+# xc2 = {0.:29.64, 1.:29.55, 2.:29.81, 3.:29.58, 5.:29.68, 6.:29.77, 7.:29.70, 8.:29.96}
+# xc1 = {0.:38.19, 1.:37.83, 2.:37.91, 3.:37.81, 5.:37.86, 6.:37.31, 7.:37.81, 8.:37.93}
+
+# fig, axs = plt.subplots(1, 2, figsize = (15,7), sharey=True)
+
+# for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
+#     data = pd.read_pickle(filepath)
+#     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
+#     T = data[fields[1]].to_numpy()
+#     C = data[fields[2]].to_numpy()
+#     idx = np.argsort(T)
+#     T = T[idx]
+#     C = C[idx]
+#     C_sub = C - lowTpieces_poly(T, *xpspss)
+#     T_sub = T[C_sub > 0]
+#     C_sub = C_sub[C_sub > 0]
+#     idm = np.argmax(C_sub)
+#     T_sub = np.delete(T_sub, idm, axis = 0)
+#     C_sub = np.delete(C_sub, idm, axis = 0)
+#     axs[0].plot(np.log(xc2[B] - T_sub[T_sub<xc2[B]]), C_sub[T_sub<xc2[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc2[B]] - xc2[B]), C_sub[T_sub>xc2[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+    
+
+# axs[0].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
+# axs[1].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
+# axs[0].invert_xaxis()
+# axs[0].set_ylabel(r'$C$ [$\mu$J/K]', fontsize = 30)
+# axs[0].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[1].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# plt.legend(fontsize = 20)
+# fig.tight_layout()
+# plt.savefig(os.path.join(resudir, 'TvsdC_050K_log_lin_M2_fit.png'))
+# plt.close()
+
+# fig, axs = plt.subplots(1, 2, figsize = (15,7), sharey=True)
+
+# for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
+#     data = pd.read_pickle(filepath)
+#     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
+#     T = data[fields[1]].to_numpy()
+#     C = data[fields[2]].to_numpy()
+#     idx = np.argsort(T)
+#     T = T[idx]
+#     C = C[idx]
+#     C_sub = C - lowTpieces_poly(T, *xpspss)
+#     T_sub = T[C_sub > 0]
+#     C_sub = C_sub[C_sub > 0]
+#     idm = np.argmax(C_sub)
+#     T_sub = np.delete(T_sub, idm, axis = 0)
+#     C_sub = np.delete(C_sub, idm, axis = 0)
+#     axs[0].plot(np.log(xc2[B] - T_sub[T_sub<xc2[B]]), np.log(C_sub[T_sub<xc2[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc2[B]] - xc2[B]), np.log(C_sub[T_sub>xc2[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+    
+
+# axs[0].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
+# axs[1].set_xlabel(r'$\log(\|T-T_{c2}\|)$ []', fontsize = 30)
+# axs[0].invert_xaxis()
+# axs[0].set_ylabel(r'$\log(C)$ []', fontsize = 30)
+# axs[0].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[1].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[0].set_ylim(4, 7)
+# plt.legend(fontsize = 20)
+# fig.tight_layout()
+# plt.savefig(os.path.join(resudir, 'TvsdC_050K_log_log_M2_fit.png'))
+# plt.close()
+
+# fig, axs = plt.subplots(1, 2, figsize = (15,7), sharey=True)
+
+# for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
+#     data = pd.read_pickle(filepath)
+#     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
+#     T = data[fields[1]].to_numpy()
+#     C = data[fields[2]].to_numpy()
+#     idx = np.argsort(T)
+#     T = T[idx]
+#     C = C[idx]
+#     C_sub = C - lowTpieces_poly(T, *xpspss)
+#     T_sub = T[C_sub > 0]
+#     C_sub = C_sub[C_sub > 0]
+#     axs[0].plot(np.log(xc1[B] - T_sub[T_sub<xc1[B]]), C_sub[T_sub<xc1[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc1[B]] - xc1[B]), C_sub[T_sub>xc1[B]], 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+    
+
+# axs[0].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
+# axs[1].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
+# axs[0].invert_xaxis()
+# axs[0].set_ylabel(r'$C$ [$\mu$J/K]', fontsize = 30)
+# axs[0].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[1].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[0].set_ylim(0, 250)
+# plt.legend(fontsize = 20)
+# fig.tight_layout()
+# plt.savefig(os.path.join(resudir, 'TvsdC_050K_log_lin_M1_fit.png'))
+# plt.close()
+
+# fig, axs = plt.subplots(1, 2, figsize = (15,7), sharey=True)
+
+# for filepath in glob.glob(os.path.join(filedir, 'NiS2_@*'))[::-1]:
+#     data = pd.read_pickle(filepath)
+#     B = np.round(data[fields[0]].to_numpy()[0]/1e4, 0)
+#     T = data[fields[1]].to_numpy()
+#     C = data[fields[2]].to_numpy()
+#     idx = np.argsort(T)
+#     T = T[idx]
+#     C = C[idx]
+#     C_sub = C - lowTpieces_poly(T, *xpspss)
+#     T_sub = T[C_sub > 0]
+#     C_sub = C_sub[C_sub > 0]
+#     axs[0].plot(np.log(xc1[B] - T_sub[T_sub<xc1[B]]), np.log(C_sub[T_sub<xc1[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+#     axs[1].plot(np.log(T_sub[T_sub>xc1[B]] - xc1[B]), np.log(C_sub[T_sub>xc1[B]]), 'o-', linewidth = 3, markersize=10, color = colors[int(B)], label = f'{B} T')
+    
+
+# axs[0].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
+# axs[1].set_xlabel(r'$\log(\|T-T_{c1}\|)$ []', fontsize = 30)
+# axs[0].invert_xaxis()
+# axs[0].set_ylabel(r'$\log(C)$ []', fontsize = 30)
+# axs[0].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[1].tick_params(which = 'both', direction = 'in', top = False, right = False, length = 5, width = 1.5, labelsize = 26)
+# axs[0].set_ylim(3.5, 5.5)
+# plt.legend(fontsize = 20)
+# fig.tight_layout()
+# plt.savefig(os.path.join(resudir, 'TvsdC_050K_log_log_M1_fit.png'))
+# plt.close()
