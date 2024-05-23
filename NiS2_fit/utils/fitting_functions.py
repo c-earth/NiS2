@@ -20,10 +20,3 @@ def Einstein(x, xe):
     eta = xe/x
     return 1 / (exprel(eta) * exprel(-eta))
 
-import matplotlib.pyplot as plt
-
-x = np.arange(0.001, 10, 0.1)
-plt.figure()
-plt.plot(x, Einstein(x, 5))
-plt.plot(x, np.vectorize(Debye)(x, 5))
-plt.show()
