@@ -1,17 +1,4 @@
-[Header]
-TITLE,NS_5T
-BYAPP,HeatCapacity,3.9.6,1.7
-INFO,5,MASS:Sample Mass (mg)
-INFO,0.5,MASSERR:Sample Mass Error (mg)
-INFO,122.82,MOLWGHT:Formula Weight (g/mole)
-INFO,3,ATOMS:Atoms per Formula Unit
-INFO,PPMS Heat Capacity Option 3.9.6 Build 3,APPNAME
-DATATYPE,TIME,1
-DATATYPE,COMMENT,2
-STARTUPAXIS, X, 8, LINEAR, AUTO
-STARTUPAXIS, Y1, 10, LINEAR, AUTO
-[Data]
-Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (µJ/K),Samp HC Err (µJ/K),Addenda HC (µJ/K),Addenda HC Err (µJ/K),Total HC (µJ/K),Total HC Err (µJ/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (µJ/K/K),Addenda Offset HC (µJ/K)
+Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (ï¿½J/K),Samp HC Err (ï¿½J/K),Addenda HC (ï¿½J/K),Addenda HC Err (ï¿½J/K),Total HC (ï¿½J/K),Total HC Err (ï¿½J/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (ï¿½J/K/K),Addenda Offset HC (ï¿½J/K)
 3926005523.84512,Error: Temperature of platform does not match the system temperature : System = 2.0567 K;  Platform = 1.9984 K
 3926005582.36619,CALFILE: C:\QDDYNA~1\HEATCA~1\TempCal\Standard\Puck1992.cal|Addenda #186 measured on 8/23/2023 from 1.7381 to 301.46 K
 3926005582.38454,,1857,2.055,2.055,50000.164,9.8999999E-6,2.0199986,0.04463656,-0.045354937,0.01641,0.52763701,0.01113,0.48228207,0.01207,1.6540221,0.27733698,,,350.72308,,1,,,,1.738975E-6,1.4233999,4.0803944,-0.022452954,0

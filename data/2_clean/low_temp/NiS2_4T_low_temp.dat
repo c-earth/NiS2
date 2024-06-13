@@ -1,17 +1,4 @@
-[Header]
-TITLE,NS_4T
-BYAPP,HeatCapacity,3.9.6,1.7
-INFO,5,MASS:Sample Mass (mg)
-INFO,0.5,MASSERR:Sample Mass Error (mg)
-INFO,122.82,MOLWGHT:Formula Weight (g/mole)
-INFO,3,ATOMS:Atoms per Formula Unit
-INFO,PPMS Heat Capacity Option 3.9.6 Build 3,APPNAME
-DATATYPE,TIME,1
-DATATYPE,COMMENT,2
-STARTUPAXIS, X, 8, LINEAR, AUTO
-STARTUPAXIS, Y1, 10, LINEAR, AUTO
-[Data]
-Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (µJ/K),Samp HC Err (µJ/K),Addenda HC (µJ/K),Addenda HC Err (µJ/K),Total HC (µJ/K),Total HC Err (µJ/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (µJ/K/K),Addenda Offset HC (µJ/K)
+Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (ï¿½J/K),Samp HC Err (ï¿½J/K),Addenda HC (ï¿½J/K),Addenda HC Err (ï¿½J/K),Total HC (ï¿½J/K),Total HC Err (ï¿½J/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (ï¿½J/K/K),Addenda Offset HC (ï¿½J/K)
 3925996279.91082,Error: Temperature of platform does not match the system temperature : System = 2.1013 K;  Platform = 2.0364 K
 3925996338.47479,CALFILE: C:\QDDYNA~1\HEATCA~1\TempCal\Standard\Puck1992.cal|Addenda #185 measured on 8/17/2023 from 1.8192 to 301.17 K
 3925996338.47876,,1857,2.09814,2.09814,40000.168,9.8999999E-6,2.0635289,0.045190675,-0.015300769,0.01983,0.52476736,0.00632,0.50946659,0.01879,17.824228,0.28717038,,,514.66859,231,1,,,,1.7740917E-6,1.4511214,4.2581515,-0.0074148557,0

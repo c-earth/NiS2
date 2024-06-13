@@ -1,17 +1,4 @@
-[Header]
-TITLE,NS_ @ 0T_low temp data1.dat
-BYAPP,HeatCapacity,3.9.6,1.7
-INFO,5,MASS:Sample Mass (mg)
-INFO,0.5,MASSERR:Sample Mass Error (mg)
-INFO,122.82,MOLWGHT:Formula Weight (g/mole)
-INFO,3,ATOMS:Atoms per Formula Unit
-INFO,PPMS Heat Capacity Option 3.9.6 Build 3,APPNAME
-DATATYPE,TIME,1
-DATATYPE,COMMENT,2
-STARTUPAXIS, X, 8, LINEAR, AUTO
-STARTUPAXIS, Y1, 10, LINEAR, AUTO
-[Data]
-Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (µJ/K),Samp HC Err (µJ/K),Addenda HC (µJ/K),Addenda HC Err (µJ/K),Total HC (µJ/K),Total HC Err (µJ/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (µJ/K/K),Addenda Offset HC (µJ/K)
+Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (ï¿½J/K),Samp HC Err (ï¿½J/K),Addenda HC (ï¿½J/K),Addenda HC Err (ï¿½J/K),Total HC (ï¿½J/K),Total HC Err (ï¿½J/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (ï¿½J/K/K),Addenda Offset HC (ï¿½J/K)
 3925981974.00754,,1857,1.99982,1.99982,-0.012126192,9.8999999E-6,2.0074841,0.028983836,0.20669833,0.001712,0.41695811,0.001615,0.62365644,0.001712,17.734482,0.24501449,0.014730374,77.515146,210.22997,7.813,1,,,,2.6318654E-6,0.50005821,4.0299925,0.10296387,0
 3925982072.59347,Error: Warning:  Measured time constant less than time constant calculated from addenda table.  Changing time constant to addenda table value
 3925982096.10327,,1857,2.88941,2.88941,-0.024252383,9.8999999E-6,2.7783938,0.041227981,0.3533796,0.002195,0.7491668,0.001921,1.1025464,0.002195,2.0561026,0.38212809,0.01333631,85.765752,243.33323,8.882,1,,,,2.9362835E-6,0.57477765,7.719472,0.12718845,0

@@ -1,17 +1,4 @@
-[Header]
-TITLE,NS_1T
-BYAPP,HeatCapacity,3.9.6,1.7
-INFO,5,MASS:Sample Mass (mg)
-INFO,0.5,MASSERR:Sample Mass Error (mg)
-INFO,122.82,MOLWGHT:Formula Weight (g/mole)
-INFO,3,ATOMS:Atoms per Formula Unit
-INFO,PPMS Heat Capacity Option 3.9.6 Build 3,APPNAME
-DATATYPE,TIME,1
-DATATYPE,COMMENT,2
-STARTUPAXIS, X, 8, LINEAR, AUTO
-STARTUPAXIS, Y1, 10, LINEAR, AUTO
-[Data]
-Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (µJ/K),Samp HC Err (µJ/K),Addenda HC (µJ/K),Addenda HC Err (µJ/K),Total HC (µJ/K),Total HC Err (µJ/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (µJ/K/K),Addenda Offset HC (µJ/K)
+Time Stamp (Seconds),Comment (),System Status (Code),Puck Temp (Kelvin),System Temp (Kelvin),Field (Oersted),Pressure (Torr),Sample Temp (Kelvin),Temp Rise (Kelvin),Samp HC (ï¿½J/K),Samp HC Err (ï¿½J/K),Addenda HC (ï¿½J/K),Addenda HC Err (ï¿½J/K),Total HC (ï¿½J/K),Total HC Err (ï¿½J/K),Fit Deviation (ChiSquare),Time Const tau1 (seconds),Time Const tau2 (seconds),Sample Coupling (Percent),Debye Temp (Kelvin),Debye Temp Err (Kelvin),Cal Correction (Factor),Therm Resist (Ohms),Htr Resist (Ohms),Puck Resist (Ohms),Wire Cond (W/K),Meas Time (seconds),Temp Squared (K^2),Samp HC/Temp (ï¿½J/K/K),Addenda Offset HC (ï¿½J/K)
 3925984104.11757,CALFILE: C:\QDDYNA~1\HEATCA~1\TempCal\Standard\Puck1992.cal|Addenda #182 measured on 8/10/2023 from 1.7648 to 301.52 K
 3925984104.11913,,1857,1.99986,1.99986,10000.166,9.8999999E-6,2.0005368,0.040077319,0.17293071,0.005141,0.44017797,0.001225,0.61310868,0.004992,27.094056,0.32182327,,,222.33647,9.759,1,,,,1.9051098E-6,1.755963,4.0021475,0.086442155,0
 3925984228.36396,,1857,2.72738,2.72738,10000.179,9.8999999E-6,2.6260746,0.047480602,0.32185264,0.002734,0.72671769,0.0008382,1.0485703,0.002734,0.81323737,0.40611853,0.017287316,82.75414,237.26995,8.833,1,,,,2.6349283E-6,1.6091164,6.896268,0.12256036,0

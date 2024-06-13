@@ -1,9 +1,4 @@
-[Header]
-STARTUPAXIS, X, 1, LINEAR, AUTO
-STARTUPAXIS, Y1, 2, LINEAR, AUTO
-STARTUPAXIS, Y1, 3, LINEAR, AUTO
-[Data]
-Temperature (K), HCTotal (uJ/K), HCSample (µJ/K), Field (Oe),Wire Heat Loss (W), T minus Tb (K), Heater Power Heating (W), Heater Power Cooling (W), Heating Rate Heating (K/s), Heating Rate Cooling (K/s)
+Temperature (K), HCTotal (uJ/K), HCSample (ï¿½J/K), Field (Oe),Wire Heat Loss (W), T minus Tb (K), Heater Power Heating (W), Heater Power Cooling (W), Heating Rate Heating (K/s), Heating Rate Cooling (K/s)
 37.47116,724.35532,491.32706,50000.434,1.7264578E-5,0.41352577,8.833666E-5,0,0.098117706,-0.023834405
 37.501962,726.59615,493.18404,50000.434,1.8464946E-5,0.44432862,8.833399E-5,0,0.096159393,-0.025412942
 37.532765,726.7446,492.94836,50000.434,1.9882019E-5,0.47513146,8.8331325E-5,0,0.094186191,-0.027357643
