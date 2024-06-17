@@ -15,7 +15,7 @@ def Electron(x, gamma):
 def phonon_electron(x, Ad, xd, Ae, xe, gamma):
     return Ad * Debye(x, xd) + Ae * Einstein(x, xe) + Electron(x, gamma)
 
-def residuals(ps, x, y, func, cutoff = 0, penalty = 1, weight = 1):
-    res = y - func(x, *ps)
-    penalize = (res < 0) * (x < cutoff)
+def residuals(ps, x, y, dy, func, cutoff = 0, penalty = 1, weight = 1):
+    res = (y - func(x, *ps))/dy
+    penalize = (res > 0) * (x < cutoff)
     return weight * res * (1 + (penalty - 1) * penalize)

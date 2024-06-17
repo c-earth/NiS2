@@ -4,7 +4,7 @@ import numpy as np
 import pickle as pkl
 
 clean_folder_path = './data/2_clean'
-data_folder = 'near_T2'
+data_folder = 'coarse_wide'
 data_folder_path = os.path.join(clean_folder_path, data_folder)
 
 extracted_folder_path = './data/3_extracted'
